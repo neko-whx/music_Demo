@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <View
+        android:id="@+id/music_item_playing_v"
+        android:layout_width="3dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:background="@color/colorAccent"
+        />
+
+    <ImageView
+        android:id="@+id/music_item_album_img"
+        android:layout_marginLeft="3dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/music_item_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/music_item_album_img"
+        android:textSize="20dp"
+        android:text="成都"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+    <TextView
+        android:id="@+id/music_item_artist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/music_item_album_img"
+        android:layout_below="@+id/music_item_title_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="bottom"
+        android:text="赵雷"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_music_list_icon_more"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_toRightOf="@+id/music_item_album_img"
+        android:background="#cccccc"
+        android:layout_alignParentBottom="true"
+        tools:ignore="RtlHardcoded,SmallSp" />
+
+</RelativeLayout>
